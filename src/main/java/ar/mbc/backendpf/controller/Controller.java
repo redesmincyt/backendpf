@@ -1,13 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ar.mbc.backendpf.controller;
 
-/**
- *
- * @author marta
- */
+import ar.mbc.backendpf.model.Experiencia;
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class Controller {
+    
+    List<Experiencia> listaExp = new ArrayList();
+    
+    @PostMapping ("/new/experiencia")
+    public void addExperiencia (@RequestBody Experiencia exp) {
+        listaExp.add(exp);
+    }
+    
+    @GetMapping ("/ver/Experiencia")
+    @ResponseBody
+    public List<Experiencia> verExperiencia() {
+        return listaExp;
+    }
     
 }
