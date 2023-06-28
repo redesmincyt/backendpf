@@ -4,6 +4,10 @@ package ar.mbc.backendpf.model;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ *
+ * @author marta
+ */
 @Getter @Setter
 public class Experiencia {
     
@@ -14,12 +18,22 @@ public class Experiencia {
     private String detalle;
     private String periodo;
     
-    
+    /**
+     *
+     */
     public Experiencia(){
         
     }
 
-    
+    /**
+     *
+     * @param id
+     * @param explogo
+     * @param empresa
+     * @param puesto
+     * @param detalle
+     * @param periodo
+     */
     public Experiencia(Long id, String explogo, String empresa, String puesto, String detalle, String periodo){
         this.id = id;
         this.explogo = explogo;
