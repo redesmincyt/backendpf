@@ -30,7 +30,7 @@ public class Controller {
         return expeServ.verExperiencia();
     }
     
-    @DeleteMapping ("/delete/{id}")
+    @DeleteMapping ("/borrar/{id}")
     public void borrarExperiencia (@PathVariable Long id) {
         expeServ.borrarExperiencia(id);
     }
