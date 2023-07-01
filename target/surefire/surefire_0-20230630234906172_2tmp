@@ -1,0 +1,5 @@
+#surefire_0
+#Fri Jun 30 23:49:06 ART 2023
+basedir=/home/marta/Documents/yoprogramo/backendpf
+maven.ext.class.path=/snap/netbeans/80/netbeans/java/maven-nblib/netbeans-eventspy.jar
+localRepository=/home/marta/.m2/repository
